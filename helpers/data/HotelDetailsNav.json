@@ -1,0 +1,22 @@
+[
+  {
+    "title": "About Hotel",
+    "link": "/hotels/details"
+  },
+  {
+    "title": "Rooms",
+    "link": "/hotels/details"
+  },
+  {
+    "title": "What's Nearby",
+    "link": "/hotels/details"
+  },
+  {
+    "title": "Facilites",
+    "link": "/hotels/details"
+  },
+  {
+    "title": "Policy",
+    "link": "/hotels/details"
+  }
+]

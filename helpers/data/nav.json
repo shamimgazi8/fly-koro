@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "Our Services",
+    "link": "#",
+    "children": [
+      {
+      "title": "Flight",
+      "link": "/#"
+    }, {
+      "title": "Hotels",
+      "link": "/hotels/search"
+    },{
+      "title": "holidays",
+      "link": "/holidays/search"
+    },
+    {
+      "title": "Foreigner’s Holiday",
+      "link": "/foreigners"
+    }, {
+      "title": "Event",
+      "link": "/event"
+    },
+    {
+      "title": "Visa",
+      "link": "/visa"
+    }
+
+    ]
+  },
+  {
+    "title": "About Us",
+    "link": "/about-us"
+  },
+  {
+    "title": "Contact us",
+    "link": "/contact-us"
+  },
+  {
+    "title": "All Posts",
+    "link": "/all-posts"
+  }
+]

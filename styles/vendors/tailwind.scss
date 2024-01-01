@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-hello{
+  
+  font-family: 'Hello', sans-serif;
+}
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+    font-family: var(--font-public-sans);
+    @apply text-body text-base;
+  }
+  a {
+    &:hover {
+      @apply text-secondary transition-all;
+    }
+  }
+  p {
+    @apply mb-4;
+  }
+  section {
+    @apply lg:pb-[80px] md:pb-[40px] pb-[30px];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading leading-[1.4] font-semibold mb-4;
+  }
+  h1 {
+    @apply lg:text-[38px] md:text-[32px] text-[26px];
+  }
+  h2 {
+    @apply lg:text-[32px] md:text-[26px] text-[20px];
+  }
+  h3 {
+    @apply lg:text-[26px] md:text-[22px] text-[20px];
+  }
+  h4 {
+    @apply lg:text-[22px] md:text-[20px] text-[18px];
+  }
+  h5 {
+    @apply lg:text-[18px] md:text-[16px] text-[16px];
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1210px] px-5 mx-auto w-full;
+  }
+  .container-extended {
+    @apply max-w-[1310px] px-5 mx-auto w-full;
+  }
+  .wrapper-small {
+    @apply max-w-[1080px] mx-auto w-full;
+  }
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      var(--m4u-clr-primary) 0%,
+      var(--m4u-clr-secondary) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn {
+    @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4  whitespace-nowrap;
+  }
+  .btn-primary {
+    @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4 bg-primary hover:bg-secondary text-white hover:text-white whitespace-nowrap;
+  }
+  .btn-grey {
+    @apply cursor-pointer inline-flex gap-1.5 font-medium items-center justify-center py-1.5 px-4 bg-[#EBEBF4] hover:bg-primary  hover:text-white whitespace-nowrap transition-all;
+  }
+
+  .display-one {
+    @apply lg:text-[64px] md:text-[44px] text-[32px];
+  }
+  .display-two {
+    @apply lg:text-[56px] md:text-[38px] text-[28px];
+  }
+  .display-three {
+    @apply lg:text-[48px] md:text-[32px] text-[26px];
+  }
+  .display-four {
+    @apply lg:text-[32px] md:text-[26px] text-[22px];
+  }
+  .p-small {
+    @apply lg:text-[13px] md:text-[13px] text-[13px];
+  }
+}

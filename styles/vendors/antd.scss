@@ -1,0 +1,52 @@
+// .mega_tab .ant-tabs-tab-active .ant-tabs-tab-btn {
+//   color: #fff !important;
+// }
+// .mega_tab .ant-tabs-tab-btn:hover {
+//   color: #fff !important;
+// }
+// .mega_tab .ant-tabs-ink-bar {
+//   background: #fff !important;
+// }
+// .mega_tab .ant-tabs-tab:hover {
+//   color: #fff !important;
+// }
+// .mega_tab .ant-tabs-nav::before {
+//   border-bottom: transparent !important;
+// }
+// .mega_tab .ant-tabs-tab-btn {
+//   color: #fff !important;
+// }
+// .mega_tab .ant-tabs-nav-wrap {
+//   justify-content: center !important;
+// }
+
+.mega_tab {
+  .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #fff !important;
+  }
+  .ant-tabs-tab-btn:hover {
+    color: #fff !important;
+  }
+  .ant-tabs-ink-bar {
+    background: #fff !important;
+  }
+  .ant-tabs-tab:hover {
+    color: #fff !important;
+  }
+  .ant-tabs-nav::before {
+    border-bottom: transparent !important;
+  }
+  .ant-tabs-tab-btn {
+    color: #fff !important;
+  }
+  .ant-tabs-nav-wrap {
+    justify-content: center !important;
+  }
+}
+
+.mega_select {
+  .ant-select-selector {
+    background: #ffe9cc !important;
+    color: #ff9100 !important;
+  }
+}
