@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "../styles/main.scss";
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const publicSans = Public_Sans({
   variable: "--font-public-sans",

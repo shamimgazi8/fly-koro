@@ -5,7 +5,7 @@ const GetInspired = () => {
   return (
     <section className="pt-5 lg:pt-[80px] bg-grey">
       <div className="container">
-        <h2 className="mb-0 text-center mb-10">
+        <h2 className=" text-center mb-10">
           Get Inspired for Your Next Trip
         </h2>
         <div className="grid lg:grid-cols-3 gap-[30px]">
