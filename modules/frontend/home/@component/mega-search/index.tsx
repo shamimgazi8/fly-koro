@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 
-const MegaSearch = ({ lb }) => {
+const MegaSearch = ({ lb }:any) => {
   const [value, setValue] = useState(1);
 
   const onChange = (e: RadioChangeEvent) => {
