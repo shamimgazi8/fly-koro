@@ -14,7 +14,7 @@ const MegaTab = () => {
     "visa",
   ];
 
-  const [Lable, setlable] = useState("Flight");
+  const [Lable, setlable] = useState("flight/search");
   const onChange = (key: any) => {
     setlable(lable[key]);
     console.log(Lable);

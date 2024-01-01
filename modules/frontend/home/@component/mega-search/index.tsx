@@ -45,8 +45,8 @@ const MegaSearch = ({ lb }:any) => {
             onChange={handleChange}
             options={[
               { value: "jack", label: "Economy" },
-              { value: "lucy", label: "Economy" },
-              { value: "Yiminghe", label: "Economy" },
+              { value: "lucy", label: "Business" },
+              { value: "Yiminghe", label: "VIP" },
             ]}
           />
         </div>
@@ -95,6 +95,7 @@ const MegaSearch = ({ lb }:any) => {
           </div>
         </div>
         <Link href={`/${lb}`}>
+          {console.log(lb)}
           <button className="flex justify-center items-center bg-secondary p-[15px] rounded-md">
             <IoSearchOutline className="text-3xl text-white" />
           </button>

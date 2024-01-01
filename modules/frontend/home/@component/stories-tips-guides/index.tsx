@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import Link from "next/link";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import StoriesCard from "../stories-card";
 import BlogCard from "../blog-card";
 
@@ -98,7 +98,7 @@ const StoriesTipsGuides = () => {
         } believe_innovation_slider_arrow believe_innovation_slider_arrow_next work_arrow`}
       >
         {/* <span className="pointer-events-none inline-block w-[6px] h-[6px] rounded-full absolute left-[-10px] bg-body country_custom_arrow"></span> */}
-        <HiOutlineArrowSmRight />
+        <FiChevronRight />
       </div>
     );
   }
@@ -115,7 +115,7 @@ const StoriesTipsGuides = () => {
           isActive === 2 ? `arrow_active` : ``
         } believe_innovation_slider_arrow  believe_innovation_slider_arrow_prev work_arrow`}
       >
-        <HiOutlineArrowSmLeft className="text-paragraph" />
+        <FiChevronLeft className="text-paragraph" />
       </div>
     );
   }
@@ -128,7 +128,7 @@ const StoriesTipsGuides = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    className: "believe_innovation",
+    className: "stories",
     responsive: [
       {
         breakpoint: 1024,
@@ -160,19 +160,12 @@ const StoriesTipsGuides = () => {
   };
 
   return (
-    <section className="overflow-hidden pt-5 lg:pt-[80px] pb-0">
+    <section className="overflow-hidden pt-5 lg:py-[80px] pb-0">
       <div className="container ">
         <div className="flex justify-between items-center  ">
-          <h2 className="text-h1 mb-0">Stories, Tips, and Guides</h2>
-          {/* <Link
-            href="/news"
-            className="flex items-center gap-[10px] text-lg mb-0"
-          >
-            <span>All News</span>
-            <FiArrowRight />
-          </Link> */}
+          <h2 className="text-h1 mb-10">Stories, Tips, and Guides</h2>
         </div>
-        <div className=" overflow-hidden pt-[60px] ">
+        <div>
           <Slider {...settings}>
             {blogData.map((item: any, i: any) => {
               return <StoriesCard key={i} classes={{ root: `!mr-5 ` }} />;

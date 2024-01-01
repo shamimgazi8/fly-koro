@@ -64,7 +64,7 @@ ul.slick-dots {
   background: url("/icons/right-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
-
+ 
   border: 1px solid var(--m4u-clr-secondary);
   border-radius: 50%;
   transition: all 0.3s;
@@ -191,8 +191,9 @@ ul.slick-dots {
 .believe_innovation {
   position: relative;
   .believe_innovation_slider_arrow {
-    background-color: #000062 !important;
-    color: #fff !important;
+    background-color: white !important;
+    border: 1px solid #DBDADE;
+    color: #aba8b3 !important;
     width: 28px !important;
     height: 30px !important;
     z-index: 1000 !important;
@@ -208,7 +209,8 @@ ul.slick-dots {
       }
     }
     &:hover {
-      background-color: #be1622 !important;
+      background-color: #000062 !important;
+      border: 0.5px solid #000062;
       -webkit-box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
       box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
       transition: all 0.8s;
@@ -231,6 +233,63 @@ ul.slick-dots {
       left: unset;
       right: 0%;
       top: 38% !important;
+      z-index: 0 !important;
+      box-sizing: content-box;
+    }
+    &.slick-disabled {
+      color: #8c8b90 !important;
+    }
+    &.dark {
+      .believe_innovation_slider_arrow_prev {
+        background: transparent !important;
+      }
+    }
+  }
+}
+// believe innovation slider arrow start
+.stories {
+  position: relative;
+  .believe_innovation_slider_arrow {
+    background-color: #fff !important;
+    color: #a5a2ad !important;
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 1000 !important;
+    top: -100px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 30px;
+      height: 30px;
+      path {
+        stroke-width: 1;
+      }
+    }
+    &:hover {
+      background-color: #000062 !important;
+      -webkit-box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
+      box-shadow: inset 0 0 0 0.3125rem rgb(150 144 162 / 15%);
+      transition: all 0.8s;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &.believe_innovation_slider_arrow_prev {
+      position: absolute;
+      left: unset;
+      top: -8% !important;
+      right: calc(1% + 58px);
+      z-index: 100 !important;
+      box-sizing: content-box;
+    }
+    &.believe_innovation_slider_arrow_next {
+      position: absolute;
+      left: unset;
+      right: 2%;
+      top: -8% !important;
       z-index: 0 !important;
       box-sizing: content-box;
     }

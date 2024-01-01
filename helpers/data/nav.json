@@ -9,7 +9,7 @@
     "children": [
       {
       "title": "Flight",
-      "link": "/#"
+      "link": "/flight/search"
     }, {
       "title": "Hotels",
       "link": "/hotels/search"
